@@ -17,6 +17,9 @@ quantidadeDeMoedasDeDez = 0
 quantidadeDeMoedasDeCinco = 0
 quantidadeDeMoedasDeUm = 0
 
+if valorCompra > valorRecebido:
+    print("Senhor(a) está faltando dinheiro: ", troco)
+    
 if troco >= 100:
     quantidadeNotasDeCem = troco // 100
     troco = troco % 100
@@ -80,4 +83,5 @@ if troco >= 0.01:
 if troco == 0:
     print("Não teve troco, obrigado! Volte sempre ^_^") 
 
-print("Seu troco é de: ", troco)
+if valorCompra < valorRecebido:
+    print("Seu troco é de: ", troco)
